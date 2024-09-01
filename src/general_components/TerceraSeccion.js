@@ -1,9 +1,9 @@
 import React from 'react'
 
-const TerceraSeccion = () => {
+const Galeria = () => {
   return (
     <div>TerceraSeccion</div>
   )
 }
 
-export default TerceraSeccion;
+export default Galeria;

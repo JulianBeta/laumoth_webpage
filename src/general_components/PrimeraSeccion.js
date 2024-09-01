@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PrimeraSeccion = () => {
+const BannerIncio = () => {
    return (
     <div>PrimeraSeccion</div>
   )
 }
 
-export default PrimeraSeccion;
+export default BannerIncio;

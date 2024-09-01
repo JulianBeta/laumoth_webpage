@@ -21,10 +21,11 @@ const Header = () => {
           <nav>
             <ul>
               <li><a href="#link1">Inicio</a></li>
-              <li><a href="#link2">Galeria</a></li>
-              <li className="logo"><a href="#home"><img src={logo} alt="Logo" /></a></li>
-              <li><a href="#link3">Tienda</a></li>
               <li><a href="#link4">Contacto</a></li>
+              <li className="logo"><a href="#home"><img src={logo} alt="Logo" /></a></li>
+              <li><a href="#link2">Galeria</a></li>
+              <li><a href="#link3">Tienda</a></li>
+              
             </ul>
           </nav>
         </div>

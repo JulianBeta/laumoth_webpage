@@ -1,0 +1,63 @@
+.ContenedorContacto {
+position: relative;
+width: 100%;
+
+}
+
+.ConteTexFot {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.TextoContacto {
+   
+    width: 80%;
+    padding-left: 20%;
+    text-align: left;
+
+
+}
+
+
+
+.FotoContacto {
+ 
+}
+
+
+.imgcontacto {
+    height: 400px;
+    width: 400px;
+    padding-right: 20%;
+}
+.BotonesContacto {
+display: flex;
+}
+
+
+.botonWhatsapp {
+background-color: #e0a9d6;
+border-radius: 8px;
+width: 15%;
+height: auto;
+margin-left: 10%;
+}
+
+.botonInstagram {
+background-color: #e0a9d6;
+border-radius: 8px;
+width: 10%;
+height: auto;
+margin-right: 10%;
+}
+
+.imgWA {
+ height: 30px;
+ width: 30px;
+}
+
+.imgIM {
+    height: 30px;
+    width: 30px;
+}

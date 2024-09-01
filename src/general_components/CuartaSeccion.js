@@ -1,10 +1,10 @@
 import React from 'react'
 
-const CuartaSeccion = () => {
+const Tienda = () => {
   return (
     <div>CuartaSeccion</div>
   )
 }
 
 
-export default CuartaSeccion;
+export default Tienda;
