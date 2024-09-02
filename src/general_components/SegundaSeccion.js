@@ -18,11 +18,11 @@ const Contacto = () => {
           <img className='imgcontacto' src={FotoContactos} />
         </div>
       </div>
-        
+        <h2>Contacto</h2>
       <div className='BotonesContacto'>
 
-        <button className='botonWhatsapp'><a target='_blank' rel='noreferrer' href='https://www.instagram.com/moleonart'><img className='imgWA' src={instagram} />  @LauraMoth</a></button>
-        <button className='botonInstagram'><a target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send/?phone=573168956823'><img className='imgIM' src={WhatsApp} /> +57 316 8956823</a></button>
+      <a className='botonWhatsapp' target='_blank' rel='noreferrer' href='https://www.instagram.com/moleonart'><button ><img className='imgWA' src={instagram} />  @LauraMoth</button></a>
+        <a className='botonInstagram' target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send/?phone=573168956823'><button ><img className='imgIM' src={WhatsApp} /> +57 316 8956823</button></a>
 
       </div>
 
