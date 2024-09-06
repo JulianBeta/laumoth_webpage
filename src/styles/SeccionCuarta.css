@@ -1,0 +1,11 @@
+.GaleriaTienda {
+    display: flex;
+    align-items: center;
+   
+    
+}
+.ImagenesTienda {
+    display: block;
+    align-items: center;
+    margin: 20px;
+}
