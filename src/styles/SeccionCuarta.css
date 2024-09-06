@@ -1,37 +1,57 @@
 .ContenedorTienda {
     display: grid;
     justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+}
+
+.contenedorproductos {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20%;
 }
 
 .GaleriaTienda {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    
 }
 
 .ImagenesTienda {
     display: block;
     align-items: center;
-    margin: 20px;
+    
+    position: relative;
 }
 
 
 @media all and (max-width: 720px) {
     .ImagenesTienda {
         display: block;
-        align-items:normal;
+        
         margin: 20px;
     }
     
     .GaleriaTienda {
         width: 100%;        
         overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorproductos {
+        display: grid;
+        justify-items: center;
+        gap: 1%;
     }
 
     .ImagenesTienda {
         display: block;
         align-items: center;
-        width: 20%;
-        height: 20%;
+        width: 80%;
+        
     }
 
 

@@ -9,11 +9,10 @@ const Tienda = () => {
   return (
     <div className='ContenedorTienda'>
       <h2 className='TituloTienda'>Tienda</h2>
-      <div className='GaleriaTienda'
-      >
-        <img className='ImagenesTienda' src={Parche} alt='fotoparche'/>
-        <img className='ImagenesTienda' src={Printmoth} alt='Printmoth'/>
-        <img className='ImagenesTienda' src={Stickers} alt='Stickers'/>
+      <div className='GaleriaTienda' >
+        <div className='contenedorproductos'><img className='ImagenesTienda' src={Parche} alt='fotoparche'/><p>Nombre de producto</p><p>Precio</p></div>
+        <div className='contenedorproductos'><img className='ImagenesTienda' src={Printmoth} alt='Printmoth'/><p>Nombre de producto</p><p>Precio</p></div>
+        <div className='contenedorproductos'><img className='ImagenesTienda' src={Stickers} alt='Stickers'/><p>Nombre de producto</p><p>Precio</p></div>
       </div>
       <div className='BotonTienda'>
         <div className='CuadroFijo'>TODOS LOS PRODUCTOS SE COMPRAN DIRECTAMENTE VÍA WHATSAPP +0573168956823</div>
