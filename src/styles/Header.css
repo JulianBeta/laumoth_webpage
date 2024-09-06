@@ -2,7 +2,9 @@
 .header {
   background-color: #f5f1f1;
   color: rgb(0, 0, 0);
-  padding: 15px 0;
+  height: 136px;
+  font-size: 12px ;
+  letter-spacing: 0.5em;
 }
   
 nav {
@@ -127,8 +129,14 @@ nav {
   padding-bottom: 20px;
 }
 
+ul {
+  position: absolute;
+  top: 50px;
+  height: 50px;
+}
+
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width:   768px) {
   .header-desktop {
     display: none;
   }

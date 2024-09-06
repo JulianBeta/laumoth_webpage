@@ -1,7 +1,7 @@
 import React from 'react'
-import FotoContactos from './../assets/FotoContactos.jpg'
-import WhatsApp from './../assets/WhatsApp.jpg'
-import instagram from './../assets/Instagram.jpg'
+import FotoContactos from './../assets/fotomia.png'
+import WhatsApp from './../assets/Whatsapp.png'
+import instagram from './../assets/Instagram.png'
 import './../styles/SeccionSegunda.css'
 
 
@@ -18,10 +18,10 @@ const Contacto = () => {
           <img className='imgcontacto' src={FotoContactos} />
         </div>
       </div>
-        <h2>Contacto</h2>
+        <h2>CONTACTO</h2>
       <div className='BotonesContacto'>
 
-      <a className='botonWhatsapp' target='_blank' rel='noreferrer' href='https://www.instagram.com/moleonart'><button ><img className='imgWA' src={instagram} />  @LauraMoth</button></a>
+      <a className='botonWhatsapp' target='_blank' rel='noreferrer' href='https://www.instagram.com/laura.moth'><button ><img className='imgWA' src={instagram} />  @LauraMoth</button></a>
         <a className='botonInstagram' target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send/?phone=573168956823'><button ><img className='imgIM' src={WhatsApp} /> +57 316 8956823</button></a>
 
       </div>

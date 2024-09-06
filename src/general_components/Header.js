@@ -20,12 +20,13 @@ const Header = () => {
         <div className="header-desktop">
           <nav>
             <ul>
-              <li><a href="#link1">Inicio</a></li>
-              <li><a href="#link4">Contacto</a></li>
+
+              <li><a href="#link1">INICIO</a></li>
+              <li><a href="#link2">CONTACTO</a></li>
               <li className="logo"><a href="#home"><img src={logo} alt="Logo" /></a></li>
-              <li><a href="#link2">Galeria</a></li>
-              <li><a href="#link3">Tienda</a></li>
-              
+              <li><a href="#link3">GALERIA</a></li>
+              <li><a href="#link4">TIENDA</a></li>
+
             </ul>
           </nav>
         </div>
