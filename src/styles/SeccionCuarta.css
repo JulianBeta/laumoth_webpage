@@ -1,3 +1,8 @@
+.ContenedorTienda {
+    display: grid;
+    justify-content: center;
+}
+
 .GaleriaTienda {
     display: flex;
     align-items: center;
@@ -8,4 +13,28 @@
     display: block;
     align-items: center;
     margin: 20px;
+}
+
+
+@media all and (max-width: 720px) {
+    .ImagenesTienda {
+        display: block;
+        align-items:normal;
+        margin: 20px;
+    }
+    
+    .GaleriaTienda {
+        width: 100%;        
+        overflow-x: hidden;
+    }
+
+    .ImagenesTienda {
+        display: block;
+        align-items: center;
+        width: 20%;
+        height: 20%;
+    }
+
+
+
 }
