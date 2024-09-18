@@ -1,7 +1,7 @@
 // src/Header.js
 import React, { useState } from 'react';
 import './../styles/Header.css'
-import logo from './../Grupo 1.png' // Ensure you have a logo image in your src directory
+import logo from './../assets/logo.png'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,13 +19,16 @@ const Header = () => {
       <div className="container">
         <div className="header-desktop">
           <nav>
-            <ul>
+            <div className="logo"><a href="#home"><img src={logo} alt="Logo" /></a></div>
+           
+            <ul className='vinculos'>
 
               <li><a href="#link1">INICIO</a></li>
+              <li><a href="#link2">SERVICIOS</a></li>
               <li><a href="#link2">CONTACTO</a></li>
-              <li className="logo"><a href="#home"><img src={logo} alt="Logo" /></a></li>
-              <li><a href="#link3">GALERIA</a></li>
               <li><a href="#link4">TIENDA</a></li>
+              <li><a href="#link3">GALERIA</a></li>
+              
 
             </ul>
           </nav>

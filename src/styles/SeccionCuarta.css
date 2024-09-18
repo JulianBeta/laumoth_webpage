@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10%;
+    align-items: center;
     margin-bottom: 10%; 
     
     
