@@ -152,5 +152,9 @@ ul {
     display: flex;
     padding: 0 5% 0 5%;
   }
+
+  .header {
+    height: 89px;
+  }
 }
   
