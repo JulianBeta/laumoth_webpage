@@ -16,7 +16,7 @@ function App() {
       <Servicios />
       <Contacto />
       <Tienda />
-      <Galeria />
+      <Galeria/>
     </div>
   );
 }
