@@ -10,14 +10,13 @@ import logofondo from './assets/fondo.jpg'
 
 function App() {
   return (
-    <div className="App" style={{background: `url(${logofondo})`, backgroundRepeat: 'repeat', backgroundAttachment: 'local', backgroundSize: '100%'}}   >
+    <div className="App" style={{ background: `url(${logofondo})`, backgroundRepeat: 'repeat', backgroundAttachment: 'local', backgroundSize: '100%' }}   >
       <Header />
       <BannerIncio />
-      <Servicios/>
-      <Contacto/>
-      <Galeria/>
-      <Tienda/>
-
+      <Servicios />
+      <Contacto />
+      <Tienda />
+      <Galeria />
     </div>
   );
 }
