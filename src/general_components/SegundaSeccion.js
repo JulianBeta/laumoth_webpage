@@ -15,7 +15,7 @@ const Contacto = () => {
             Mi enfoque es crear tatuajes personalizados que se adapten a tu propia historia.<br></br>
             <br></br>
             Después de 9 años de experiencia, me he dedicado a perfeccionar cada detalle para que
-            lleves algo duradero y de calidad, me aseguro que lleguemos a una co-creación de tu visión y
+            lleves algo duradero y de calidad. Me aseguro que lleguemos a una co-creación de tu visión y
             de mi estilo artístico.</p>
           <br></br>
              </div>

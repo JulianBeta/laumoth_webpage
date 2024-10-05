@@ -25,11 +25,11 @@ const Galeria = () => {
         touchAngle={0}
         touchEventsTarget='container'
         autoplay={{
-          delay: 100000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         coverflowEffect={{
-          rotate: 2,
+          rotate: 1,
           stretch: 5,
           depth: 100,
           modifier: 2.5,
@@ -67,7 +67,7 @@ const Galeria = () => {
           <div className="swiper-button-next slider-arrow">
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
-          <div className="swiper-pagination"></div>
+          {/* <div className="swiper-pagination"></div> */}
         </div>
       </Swiper>
     
