@@ -1,25 +1,30 @@
 .ContenedorTienda {
-    display: grid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     position: relative;
     margin-top: 10%;
+    
 }
 
 .contenedorproductos {
     display: grid;
     justify-items: center;
     margin-bottom: 20%;
-    width: 120%;
+    width: 90%;
     gap: 10%;
 }
 
 .GaleriaTienda {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
     margin-bottom: 10%; 
+    margin-top: 2%;
+    
     
     
 }
@@ -27,7 +32,7 @@
 .ImagenesTienda {
     display: block;
     align-items: center;
-    width: 2000%;
+    width: 50%;
     position: relative;
 }
 

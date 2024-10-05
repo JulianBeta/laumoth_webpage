@@ -1,5 +1,6 @@
 .ContenedorServicios {
-    display: grid;
+    position: relative;
+    
     justify-content: center;
     width: 100%;
     position: relative;
@@ -7,6 +8,7 @@
 }
 
 .recuadroservicios {
+    position: relative;
     display: grid;
     justify-items: center;
     margin-bottom: 20%;
@@ -17,9 +19,10 @@
 }
 
 .GaleriaServicios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
     margin-bottom: 10%; 
     margin-top: 2%;
     
