@@ -4,37 +4,42 @@
   color: rgb(0, 0, 0);
   font-size: 12px;
   letter-spacing: 0.5em;
-  padding-top: 20px;
+  padding-top: 20px; /* Ensure some space between the top of the page and the header */
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Ensure both logo and links are centered */
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Desktop version */
 .header-desktop {
   display: flex;
-  flex-direction: column; /* Stack the logo and links vertically */
-  align-items: center; /* Center both logo and links */
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.header-desktop nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .logo {
-  margin-bottom: 53px; /* Add space below the logo */
-}
-
-.logo img {
-  width: auto;
-  height: 100px; /* Adjust logo size as needed */
+  margin-right: auto; /* Ensures the logo stays at the start (left) */
 }
 
 .header-desktop nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%; /* Ensure the links are spread across the full width */
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 53px 0 0 0; /* Set the margin-top to 53px below the logo */
+  width: 100%;
 }
 
 .header-desktop nav ul li {
@@ -43,9 +48,29 @@
 
 .header-desktop nav ul li a {
   text-decoration: none;
-  color: black; /* Style the links */
+  color: black; /* Style links as needed */
   font-size: 16px;
-  text-transform: uppercase; /* Optional: add uppercase styling */
+}
+
+/* Mobile version */
+.header-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.header-mobile .hamburger {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+.header-mobile .logo img {
+  height: 70px;
+  padding-top: 10px;
 }
 
 .mobile-menu {
@@ -53,25 +78,48 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Full viewport height */
-  background-color: #E0A9D6; /* Background color for the menu */
+  height: 100%;
+  background-color: #E0A9D6; /* Adjust color as needed */
   color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
   padding: 0;
   z-index: 1000;
 }
 
-/* Each section (logo + links) will have an equal height */
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.mobile-menu-header .logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu-header .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+}
+
 .mobile-menu nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%; /* Ensures the ul takes the full available height */
+  height: 100%;
   display: flex;
-  flex-direction: column; /* Stack the li items vertically */
-  justify-content: space-between; /* Distribute space evenly */
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu nav ul li {
@@ -84,10 +132,6 @@
   border-top: 1px solid black; /* Divider between sections */
 }
 
-.mobile-menu nav ul li:first-child {
-  border-top: none; /* No border above the first section */
-}
-
 .mobile-menu nav ul li a {
   font-size: 24px;
   text-decoration: none;
@@ -98,31 +142,19 @@
   display: block;
 }
 
-/* Logo section styled similarly to other sections */
 .logo {
-  height: calc(100vh / 6); /* Logo section gets the same height as others */
+  height: calc(100vh / 6);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo img {
-  max-height: 80%; /* Ensure the logo fits within its section */
+  height: 80%;
   width: auto;
 }
 
-/* Close button "X" at the top-right */
-.mobile-menu-header .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: rgb(0, 0, 0);
-  font-size: 48px;
-}
-
-/* Responsive adjustments for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .header-desktop {
     display: none;
