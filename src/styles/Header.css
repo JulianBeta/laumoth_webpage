@@ -2,58 +2,50 @@
 .header {
   background-color: transparent;
   color: rgb(0, 0, 0);
-  height: 200px;
-  font-size: 12px ;
+  font-size: 12px;
   letter-spacing: 0.5em;
-}
-
-.container {
+  padding-top: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Ensure both logo and links are centered */
 }
 
 /* Desktop version */
 .header-desktop {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column; /* Stack the logo and links vertically */
+  align-items: center; /* Center both logo and links */
   width: 100%;
+}
+
+.logo {
+  margin-bottom: 53px; /* Add space below the logo */
+}
+
+.logo img {
+  width: auto;
+  height: 100px; /* Adjust logo size as needed */
 }
 
 .header-desktop nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 100%; /* Ensure the links are spread across the full width */
   list-style: none;
   padding: 0;
-  margin-top: 63px;
+  margin: 0;
 }
 
 .header-desktop nav ul li {
   padding: 0 20px;
 }
 
-/* Mobile version */
-.header-mobile {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-}
-
-.header-mobile .hamburger {
-  background: none;
-  border: none;
-  color: rgb(0, 0, 0);
-  font-size: 40px;
-}
-
-.header-mobile .logo img {
-  height: 70px;
-  padding-top: 10px;
+.header-desktop nav ul li a {
+  text-decoration: none;
+  color: black; /* Style the links */
+  font-size: 16px;
+  text-transform: uppercase; /* Optional: add uppercase styling */
 }
 
 .mobile-menu {
@@ -61,49 +53,25 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #E0A9D6; /* Adjust color based on your need */
+  height: 100vh; /* Full viewport height */
+  background-color: #E0A9D6; /* Background color for the menu */
   color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: column;
-  padding: 0; /* Remove padding so that sections are equally divided */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 0;
   z-index: 1000;
 }
 
-.mobile-menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-}
-
-.mobile-menu-header .logo {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center; /* Center the logo */
-}
-
-.mobile-menu-header .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: rgb(0, 0, 0);
-  font-size: 48px;
-}
-
-/* Sections for logo and links */
+/* Each section (logo + links) will have an equal height */
 .mobile-menu nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Ensures the ul takes the full available height */
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column; /* Stack the li items vertically */
+  justify-content: space-between; /* Distribute space evenly */
 }
 
 .mobile-menu nav ul li {
@@ -116,6 +84,10 @@
   border-top: 1px solid black; /* Divider between sections */
 }
 
+.mobile-menu nav ul li:first-child {
+  border-top: none; /* No border above the first section */
+}
+
 .mobile-menu nav ul li a {
   font-size: 24px;
   text-decoration: none;
@@ -126,6 +98,7 @@
   display: block;
 }
 
+/* Logo section styled similarly to other sections */
 .logo {
   height: calc(100vh / 6); /* Logo section gets the same height as others */
   display: flex;
@@ -134,11 +107,22 @@
 }
 
 .logo img {
-  height: 80%; 
+  max-height: 80%; /* Ensure the logo fits within its section */
   width: auto;
 }
 
-/* Responsive adjustments */
+/* Close button "X" at the top-right */
+.mobile-menu-header .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .header-desktop {
     display: none;
