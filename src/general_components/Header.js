@@ -41,18 +41,18 @@ const Header = () => {
         </div>
 
         {menuOpen && (
-          <div className="mobile-menu">
+          <div className={`mobile-menu ${menuOpen ? 'menu-open' : ''}`}>
             <div className="mobile-menu-header">
               <a href="#home" className="logo"><img src={logo} alt="Logo" /></a>
               <button className="close" onClick={closeMenu}>&times;</button>
             </div>
             <nav>
               <ul>
-                <li><a href="#link1" onClick={closeMenu}>Inicio</a></li>
-                <li><a href="#link2" onClick={closeMenu}>Servicios</a></li>
-                <li><a href="#link3" onClick={closeMenu}>Contacto</a></li>
-                <li><a href="#link4" onClick={closeMenu}>Tienda</a></li>
-                <li><a href="#link5" onClick={closeMenu}>Galeria</a></li>
+                <li><a href="#link1" onClick={closeMenu}>INICIO</a></li>
+                <li><a href="#link2" onClick={closeMenu}>SERVICIOS</a></li>
+                <li><a href="#link3" onClick={closeMenu}>CONTACTO</a></li>
+                <li><a href="#link4" onClick={closeMenu}>TIENDA</a></li>
+                <li><a href="#link5" onClick={closeMenu}>GALERIA</a></li>
               </ul>
             </nav>
           </div>
