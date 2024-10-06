@@ -1,6 +1,5 @@
 import React from 'react'
 import FotoContactos from './../assets/fotomia.png'
-
 import './../styles/SeccionSegunda.css'
 
 

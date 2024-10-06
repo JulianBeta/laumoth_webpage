@@ -25,9 +25,9 @@ const Header = () => {
 
               <li><a href="#link1">INICIO</a></li>
               <li><a href="#link2">SERVICIOS</a></li>
-              <li><a href="#link2">CONTACTO</a></li>
+              <li><a href="#link3">CONTACTO</a></li>
               <li><a href="#link4">TIENDA</a></li>
-              <li><a href="#link3">GALERIA</a></li>
+              <li><a href="#link5">GALERIA</a></li>
               
 
             </ul>
@@ -39,18 +39,20 @@ const Header = () => {
             <span className="hamburger-icon">&#9776;</span>
           </button>
         </div>
+
         {menuOpen && (
           <div className="mobile-menu">
             <div className="mobile-menu-header">
-              <a href="#home" className="logo" onClick={closeMenu}><img src={logo} alt="Logo" /></a>
+              <a href="#home" className="logo"><img src={logo} alt="Logo" /></a>
               <button className="close" onClick={closeMenu}>&times;</button>
             </div>
             <nav>
               <ul>
                 <li><a href="#link1" onClick={closeMenu}>Inicio</a></li>
-                <li><a href="#link2" onClick={closeMenu}>Galeria</a></li>
-                <li><a href="#link3" onClick={closeMenu}>Tienda</a></li>
-                <li><a href="#link4" onClick={closeMenu}>Contacto</a></li>
+                <li><a href="#link2" onClick={closeMenu}>Servicios</a></li>
+                <li><a href="#link3" onClick={closeMenu}>Contacto</a></li>
+                <li><a href="#link4" onClick={closeMenu}>Tienda</a></li>
+                <li><a href="#link5" onClick={closeMenu}>Galeria</a></li>
               </ul>
             </nav>
           </div>

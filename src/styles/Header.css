@@ -1,4 +1,4 @@
-/* src/Header.css */
+/* General Header styles */
 .header {
   background-color: transparent;
   color: rgb(0, 0, 0);
@@ -6,27 +6,21 @@
   font-size: 12px ;
   letter-spacing: 0.5em;
 }
-  
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
-}
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-  
+
+/* Desktop version */
 .header-desktop {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
-  
+
 .header-desktop nav ul {
   display: flex;
   justify-content: space-around;
@@ -36,12 +30,12 @@ nav {
   padding: 0;
   margin-top: 63px;
 }
-  
+
 .header-desktop nav ul li {
   padding: 0 20px;
 }
-  
-  
+
+/* Mobile version */
 .header-mobile {
   display: none;
   justify-content: space-between;
@@ -49,14 +43,14 @@ nav {
   width: 100%;
   height: 80px;
 }
-  
+
 .header-mobile .hamburger {
   background: none;
   border: none;
   color: rgb(0, 0, 0);
   font-size: 40px;
 }
-  
+
 .header-mobile .logo img {
   height: 70px;
   padding-top: 10px;
@@ -68,15 +62,14 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #E0A9D6;
+  background-color: #E0A9D6; /* Adjust color based on your need */
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content:space-evenly;
-  padding: 20px;
+  padding: 0; /* Remove padding so that sections are equally divided */
+  z-index: 1000;
 }
-  
+
 .mobile-menu-header {
   display: flex;
   justify-content: space-between;
@@ -86,75 +79,77 @@ nav {
 }
 
 .mobile-menu-header .logo {
-  flex-grow: 1; /* allow the logo section to grow */
+  flex-grow: 1;
   display: flex;
-  justify-content: center; /* center the logo within its container */
+  justify-content: center; /* Center the logo */
 }
 
 .mobile-menu-header .close {
-  flex-shrink: 0; /* prevents shrinking, stays aligned to the right */
-}
-  
-
-.mobile-menu .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
   background: none;
   border: none;
   color: rgb(0, 0, 0);
   font-size: 48px;
 }
-  
+
+/* Sections for logo and links */
 .mobile-menu nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-  
+
 .mobile-menu nav ul li {
-  padding: 60px 0 20px 0;
-  border-top: 2px solid rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh / 6); /* Each section gets 1/6th of the viewport height */
+  border-top: 1px solid black; /* Divider between sections */
+}
+
+.mobile-menu nav ul li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  display: block;
 }
 
 .logo {
-  margin-top: 20px;
-  padding-bottom: 30px;
+  height: calc(100vh / 6); /* Logo section gets the same height as others */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
-  height: 100px;
-  padding-top: 10px;
+  height: 80%; 
+  width: auto;
 }
 
-.hamburger-icon {
-  padding-bottom: 20px;
-}
-
-ul {
-  position: absolute;
-  top: 50px;
-  height: 50px;
-}
-
-
-
-/* Responsive styles */
-@media (max-width:   768px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .header-desktop {
     display: none;
   }
 
   .header-mobile {
     display: flex;
-    padding: 0 5% 0 5%;
+    padding: 0 5%;
   }
 
   .header {
     height: 89px;
   }
 }
-  
