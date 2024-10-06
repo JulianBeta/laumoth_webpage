@@ -1,38 +1,146 @@
 .ContenedorServicios {
-    position: relative;
-    
-    justify-content: center;
     width: 100%;
-    position: relative;
     margin-top: 10%;
-}
-
-.recuadroservicios {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    margin-bottom: 20%;
-    width:  270px;
-    height: 295px;
-    background-color: gray;
-    gap: 50px;
+    text-align: center;
 }
 
 .GaleriaServicios {
     display: flex;
-    flex-direction: row;
-    gap: 5%;
-    justify-content: center;
-    margin-bottom: 10%; 
-    margin-top: 2%;
-    
-    
+    justify-content: space-around;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    padding: 0 5%;
 }
 
-.ImagenesServicios {
-    display: block;
+.servicio {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 2000%;
-    position: relative;
+    width: 30%;
 }
 
+.recuadroservicios {
+    width: 270px;
+    height: 295px;
+    margin-bottom: 20px;
+}
+
+.TituloServicios {
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Alumni Sans";
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 250px;
+}
+
+/* Divider between image and text */
+.divider {
+    width: 80%;
+    margin: 20px auto; /* Ensures the divider is horizontally centered */
+    border: 0;
+    height: 1px;
+    background-color: #000;
+}
+
+/* Contact Section */
+.BotonesContacto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botonRedes button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e0a9d6;
+    border: none;
+    cursor: pointer;
+}
+
+.imgWA, .imgIM {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 920px) {
+    .GaleriaServicios {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .servicio {
+        width: 100%;
+        align-items: center;
+    }
+
+    .recuadroservicios {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        background-size: cover;
+        background-position: center;
+        display: inline;
+    }
+
+    .divider {
+        width: 80%;
+        margin: 10px auto; /* Ensure it's centered in mobile */
+    }
+
+    h3 {
+        margin-bottom: 0;
+        order: 2;
+    }
+
+    hr {
+        order: 1;
+        width: 80%;
+    }
+
+    p {
+        order: 0;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .BotonesContacto {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .botonRedes button {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+}
