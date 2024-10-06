@@ -26,10 +26,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-direction: column;
 }
 
 .logo {
-  margin-right: auto; /* Ensures the logo stays at the start (left) */
+  align-self: center;
+  max-width: 364px;
 }
 
 .header-desktop nav ul {
@@ -89,10 +91,12 @@
 
 .mobile-menu-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 10px 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .mobile-menu-header .logo {
