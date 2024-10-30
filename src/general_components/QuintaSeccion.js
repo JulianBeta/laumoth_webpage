@@ -4,26 +4,36 @@ import WhatsApp from './../assets/Whatsapp.png';
 import instagram from './../assets/Instagram.png';
 import rectangle from './../assets/Rectangle.png'; // First image
 import rectangleHover from './../assets/printmoth.jpg'; // Second image (to be revealed on hover)
+import cover1a from './../assets/cover1a.JPG'
+import cover1b from './../assets/cover1b.JPG'
+import piercing1 from './../assets/piercing1.JPG'
+import piercing2 from './../assets/piercing2.JPG'
+import piercing3 from './../assets/piercing3.JPG'
+import tattoo2 from './../assets/tattoo2.JPG'
+import tattoo1 from './../assets/tattoo1.JPG'
+
 
 export default function Servicios() {
   return (
     <div className='ContenedorServicios'>
       <h2 className='TituloServicios'>SERVICIOS</h2>
-      <div className='GaleriaServicios'>
+       <hr className="dividercel" />
+       
+       <div className='GaleriaServicios'>
         {/* First Service */}
-        <div className='servicio'>
-          <b><h3>Cubrimientos</h3></b>
+       <div className='servicio'>
+       <b><h3>Cubrimientos</h3></b>
           <p>Cuando ese tatuaje que tienes ya no te representa o quieres darle nueva vida, creamos una nueva composición que cubra muy bien el antiguo tatuaje.</p>
           <hr className="divider" />
           <div className='image-container'>
             <img 
               className='recuadroservicios' 
-              src={rectangle} 
+              src={cover1b} 
               alt="Cubrimientos" 
             />
             <img 
               className='recuadroservicios cover-image' 
-              src={rectangleHover} 
+              src={cover1a} 
               alt="Cubrimientos Hover" 
             />
           </div>
@@ -37,12 +47,12 @@ export default function Servicios() {
           <div className='image-container'>
             <img 
               className='recuadroservicios' 
-              src={rectangle} 
+              src={tattoo2} 
               alt="Tatuajes" 
             />
             <img 
               className='recuadroservicios cover-image' 
-              src={rectangleHover} 
+              src={tattoo1} 
               alt="Tatuajes Hover" 
             />
           </div>
@@ -56,12 +66,12 @@ export default function Servicios() {
           <div className='image-container'>
             <img 
               className='recuadroservicios' 
-              src={rectangle} 
+              src={piercing1} 
               alt="Piercing" 
             />
             <img 
               className='recuadroservicios cover-image' 
-              src={rectangleHover} 
+              src={piercing2} 
               alt="Piercing Hover" 
             />
           </div>

@@ -16,12 +16,12 @@ function App() {
 
         <Contacto />
         <Servicios />
-        <Galeria/>
-        <Tienda />
-        <Servicios/>
+        <Tienda /> 
+           
+       <Galeria/>
+        {/* <Servicios/> */}
 
-      
-    </div>
+          </div>
   );
 }
 

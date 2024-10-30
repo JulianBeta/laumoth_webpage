@@ -29,7 +29,7 @@
     font-family: "Abril Fatface";
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -49,11 +49,11 @@ hr {
 
 p {
     font-family: "Alumni Sans";
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 1.6;
     text-align: center;
-    max-width: 250px;
+    max-width: 500px;
     height: 100px;
 }
 
@@ -64,6 +64,11 @@ p {
     border: 0;
     height: 1px;
     background-color: #000;
+}
+
+.dividercel {
+    height: 0px;
+    width: 0px;
 }
 
 /* Contact Section */
@@ -112,7 +117,13 @@ p {
 }
 
 /* Responsive Styles */
-@media (max-width: 920px) {
+@media (max-width: 720px) {
+    .ContenedorServicios {
+        width: 100%;
+        margin-top: 100%;
+        text-align: center;
+    }
+    
     .GaleriaServicios {
         flex-direction: column;
         gap: 30px;
@@ -120,20 +131,16 @@ p {
 
     .servicio {
         width: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
+     }
 
-    .recuadroservicios {
-        width: 100%;
-        height: auto;
-        max-width: 300px;
-        background-size: cover;
-        background-position: center;
-        display: inline;
-    }
+    
 
     .divider {
         width: 80%;
+        height: 1px;
         margin: 10px auto; /* Ensure it's centered in mobile */
     }
 
@@ -151,6 +158,12 @@ p {
         order: 0;
         max-width: 90%;
         margin-bottom: 20px;
+        font-family: "Alumni Sans";
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 1.6;
+        text-align: center;
+        height: 100px;
     }
 
     .BotonesContacto {
@@ -166,4 +179,47 @@ p {
         text-align: center;
         padding: 10px;
     }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        position:relative;
+    
+
+        
+    }
+
+
+    .recuadroservicios {
+    position: relative;
+    width: 70%;
+    height: auto;
+    justify-content: space-between; /* Ensure equal spacing between images */
+    overflow: hidden; 
+    }
+    
+    .cover-image {
+       
+        opacity: 1;
+        
+        float: right;
+    }
+    
+    .image-container:hover .cover-image {
+        
+        
+        float: left;
+    }
+
+    .dividercel {
+        width: 80%;
+        margin: 10px auto; /* Ensure it's centered in mobile */
+        border: 0;
+        height: 1px;
+        background-color: #000;
+    }
 }
+
+

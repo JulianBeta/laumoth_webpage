@@ -8,7 +8,7 @@ import './../styles/SeccionCuarta.css'
 const Tienda = () => {
   return (
     <div className='ContenedorTienda'>
-      <div className='TituloTienda'><h2 >Tienda</h2></div>
+      <div ><h2 className='TituloTienda'><b>TIENDA</b></h2></div>
       <div className='GaleriaTienda' >
         <div className='contenedorproductos'><img className='ImagenesTienda' src={Parche} alt='fotoparche'/><p>Nombre de producto</p><p>Precio</p></div>
         <div className='contenedorproductos'><img className='ImagenesTienda' src={Printmoth} alt='Printmoth'/><p>Nombre de producto</p><p>Precio</p></div>
