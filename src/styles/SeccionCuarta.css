@@ -5,13 +5,13 @@
     justify-content: center;
     width: 100%;
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
     
 }
 
 .TituloTienda {
     font-family: "Abril Fatface";
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 400;
     margin-bottom: 40px;
 }
@@ -25,11 +25,11 @@
 }
 
 .GaleriaTienda {
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0%;
     justify-content: center;
-    margin-bottom: 10%; 
+    margin-bottom: 2%; 
     margin-top: 2%;
     
     
@@ -43,13 +43,43 @@
     position: relative;
 }
 
+.BotonTienda {
+    position: relative;
+    margin-bottom: 5%;
+
+}
+
 .CuadroFijo {
+    position: relative;
     display: block;
-    align-self: center;
-    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;
+    height: 15em;
     background-color: #5c5c5c;
     border-top-left-radius: 16px;
 
+}
+
+.botonInstagram {
+    width: 10%;
+    height: 5em;
+    padding: 10px;
+    background-color: #e0a9d6;
+    border: none;
+    cursor: pointer;
+   
+    margin: 0 auto;
+    position: absolute;  
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+
+.textocuadrocentralfijo {
+position: absolute;
+top: 20%;
 }
 
 
