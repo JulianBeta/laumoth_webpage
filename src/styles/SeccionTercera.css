@@ -14,11 +14,6 @@
     /* width: 200px;
     height: 200px; */
   }
-
-  .swiper-slide:hover {
-    border: solid black 2px;
-  
-  }
   
   .swiper-slide img {
     display: block;
@@ -26,8 +21,42 @@
   }
 
   .swiper-button-next {
-    color:black;
-  }
+    --button-size: clamp(12px, 8vw, 64px); /* Button size scales between 30px and 76px */
+    --icon-size: clamp(8px, 4vw, 12px); /* Icon size scales between 16px and 24px */
+
+    width: var(--button-size); /* Dynamic width */
+    height: var(--button-size); /* Dynamic height */
+    background-color: #E0A9D6; /* Circle color */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensures the icon is white */
+    transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+.swiper-button-next ion-icon {
+    font-size: var(--icon-size); /* Dynamic icon size */
+}
+
+.swiper-button-prev {
+  --button-size: clamp(12px, 8vw, 64px); /* Button size scales between 30px and 76px */
+  --icon-size: clamp(8px, 4vw, 12px); /* Icon size scales between 16px and 24px */
+
+  width: var(--button-size); /* Dynamic width */
+  height: var(--button-size); /* Dynamic height */
+  background-color: #E0A9D6; /* Circle color */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensures the icon is white */
+  transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+.swiper-button-prev ion-icon {
+  font-size: var(--icon-size); /* Dynamic icon size */
+}
 
   .swiper-slide-next {
     opacity: 0;
@@ -57,6 +86,15 @@
     border-radius: 8px;
     /* width: 200px;
     height: 200px; */
+  }
+
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper-button-next ion-icon {
+      font-size: 12px; /* Adjust icon size for smaller devices */
   }
 }
 
