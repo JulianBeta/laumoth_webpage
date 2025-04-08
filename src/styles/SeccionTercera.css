@@ -21,9 +21,9 @@
   }
 
   .swiper-button-next {
-    --button-size: clamp(12px, 8vw, 64px); /* Button size scales between 30px and 76px */
-    --icon-size: clamp(8px, 4vw, 12px); /* Icon size scales between 16px and 24px */
-
+    --button-size: clamp(12px, 8vw, 64px);
+    --icon-size: clamp(1px, 2vw, 3px); 
+  
     width: var(--button-size); /* Dynamic width */
     height: var(--button-size); /* Dynamic height */
     background-color: #E0A9D6; /* Circle color */
@@ -40,8 +40,8 @@
 }
 
 .swiper-button-prev {
-  --button-size: clamp(12px, 8vw, 64px); /* Button size scales between 30px and 76px */
-  --icon-size: clamp(8px, 4vw, 12px); /* Icon size scales between 16px and 24px */
+  --button-size: clamp(12px, 8vw, 64px);
+  --icon-size: clamp(1px, 2vw, 3px); 
 
   width: var(--button-size); /* Dynamic width */
   height: var(--button-size); /* Dynamic height */
@@ -71,7 +71,7 @@
   }
 
   
-@media all and (max-width: 480px) {
+@media all and (max-width: 960px) {
   .swiper {
     width: 80%;
     padding-top: 10px;
@@ -93,9 +93,20 @@
     height: 30px;
   }
 
-  .swiper-button-next ion-icon {
-      font-size: 12px; /* Adjust icon size for smaller devices */
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
   }
+
+  .swiper-button-next:after {
+    content: 'next';
+    font-size: 18px;
+}
+
+  .swiper-button-prev:after {
+  content: 'prev';
+  font-size: 18px;
+}
 }
 
   
