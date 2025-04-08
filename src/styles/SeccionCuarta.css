@@ -6,7 +6,6 @@
     width: 100%;
     position: relative;
     margin-top: 5%;
-    
 }
 
 .TituloTienda {
@@ -14,7 +13,6 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
-   
 }
 
 .contenedorproductos {
@@ -32,9 +30,6 @@
     justify-content: center;
     margin-bottom: 2%; 
     margin-top: 2%;
-    
-    
-    
 }
 
 .ImagenesTienda {
@@ -44,43 +39,49 @@
     position: relative;
 }
 
-.BotonTienda {
-    position: relative;
-    margin-bottom: 5%;
-
-}
-
 .CuadroFijo {
-    position: relative;
+    position: absolute;
     display: block;
     margin: 0 auto;
     text-align: center;
     width: 25%;
-    height: 15em;
+    height: 8em;
     background-color: #5c5c5c;
     border-top-left-radius: 16px;
-
+    margin-bottom: 40px; 
 }
 
 .botonInstagram {
-    width: 10%;
-    height: 5em;
-    padding: 10px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 20%);
+    width: auto;
+    min-width: 120px;
+    height: 3em;
+    padding: 10px 20px;
     background-color: #e0a9d6;
     border: none;
     cursor: pointer;
-   
-    margin: 0 auto;
-    position: absolute;  
     border-top-left-radius: 16px;
     border-bottom-right-radius: 16px;
-
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 1;
 }
 
 
 .textocuadrocentralfijo {
-position: absolute;
-top: 20%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 6px;
 }
 
 

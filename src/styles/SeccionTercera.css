@@ -21,7 +21,7 @@
   }
 
   .swiper-button-next {
-    --button-size: clamp(12px, 8vw, 64px);
+    --button-size: clamp(12px, 8vw, 56px);
     --icon-size: clamp(1px, 2vw, 3px); 
   
     width: var(--button-size); /* Dynamic width */
@@ -40,7 +40,7 @@
 }
 
 .swiper-button-prev {
-  --button-size: clamp(12px, 8vw, 64px);
+  --button-size: clamp(12px, 8vw, 56px);
   --icon-size: clamp(1px, 2vw, 3px); 
 
   width: var(--button-size); /* Dynamic width */

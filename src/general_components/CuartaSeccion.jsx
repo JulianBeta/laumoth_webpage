@@ -15,10 +15,8 @@ const Tienda = () => {
         <div className='contenedorproductos'><img className='ImagenesTienda' src={Stickers} alt='Stickers'/><p>SET de 3 STICKERS<br></br>COP $10.000</p></div>
       </div>
       <div className='BotonTienda'>
-        <div className='CuadroFijo'><h2 className='textocuadrocentralfijo'>TODOS LOS PRODUCTOS SE COMPRAN DIRECTAMENTE VÍA WHATSAPP +0573168956823</h2></div>
-        <a target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send/?phone=573168956823'><button className='botonInstagram'>Comprar</button></a>
-
-
+        <div className='CuadroFijo'><h2 className='textocuadrocentralfijo'>TODOS LOS PRODUCTOS SE COMPRAN DIRECTAMENTE VÍA WHATSAPP +573168956823</h2></div>
+        <a target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send/?phone=573168956823'><button className='botonInstagram'>COMPRAR</button></a>
       </div>
 
 
