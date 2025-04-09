@@ -51,7 +51,7 @@
 .header-desktop nav ul li a {
   text-decoration: none;
   color: black; /* Style links as needed */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* Mobile version */
@@ -163,7 +163,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header-desktop {
     display: none;
   }
