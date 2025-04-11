@@ -9,10 +9,12 @@
 }
 
 .TituloTienda {
+    
     font-family: "Abril Fatface";
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    
 }
 
 .contenedorproductos {
@@ -91,6 +93,15 @@
         margin: 20px;
     }
     
+    .TituloTienda {
+    
+        font-family: "Abril Fatface";
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    
+}
+
     .GaleriaTienda {
         width: 100%;        
         overflow-x: hidden;

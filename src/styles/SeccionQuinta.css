@@ -27,14 +27,21 @@
 
 .TituloServicios {
     font-family: "Abril Fatface";
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.Titulocontacto{
+    font-family: "Abril Fatface";
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 h3 {
     font-family: "Abril Fatface";
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -122,6 +129,20 @@ p {
         width: 100%;
         margin-top: 0%;
         text-align: center;
+    }
+
+    .TituloServicios {
+        font-family: "Abril Fatface";
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .Titulocontacto{
+        font-family: "Abril Fatface";
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
     
     .GaleriaServicios {

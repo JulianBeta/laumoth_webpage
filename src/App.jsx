@@ -7,6 +7,7 @@ import Galeria from './general_components/TerceraSeccion';
 import Servicios from './general_components/QuintaSeccion';
 import Tienda from './general_components/CuartaSeccion';
 import logofondo from './assets/fondo.jpg'
+import Footer from './general_components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
            
        <Galeria/>
         {/* <Servicios/> */}
+        <Footer/>
 
           </div>
   );

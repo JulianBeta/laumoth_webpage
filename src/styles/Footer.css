@@ -1,0 +1,51 @@
+.footercontainer {
+    
+    color: #5C5C5C;
+    
+}
+
+.primerrenglon{
+    font-family: "Abril face";
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-self: center;
+    gap: 3rem;
+}
+
+.segundorenglon{
+    font-family: "Abril face";
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+
+@media all and (max-width: 720px) {
+    .footercontainer {
+        font-family: "Abril face";
+        color: #5C5C5C;
+        font-size: .5rem;
+      
+    }
+
+    .primerrenglon{
+        
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-self: center;
+        gap: 1rem;
+    }
+    
+    .segundorenglon{
+        font-size: .5rem;
+        text-align: center;
+        justify-self: center;
+        margin-bottom: 5px;
+    }
+
+    .seccionprimerrenglon {
+        font-size: .5rem;
+    }
+}

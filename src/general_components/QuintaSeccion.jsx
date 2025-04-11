@@ -78,7 +78,7 @@ export default function Servicios() {
         </div>
       </div>
 
-      <h2>CONTACTO</h2>
+      <h2 className='Titulocontacto'>CONTACTO</h2>
       <div className='BotonesContacto'>
         <a className='botonRedes' target='_blank' rel='noreferrer' href='https://www.instagram.com/laura.moth'>
           <button><img className='imgWA' src={instagram} alt="Instagram" />
