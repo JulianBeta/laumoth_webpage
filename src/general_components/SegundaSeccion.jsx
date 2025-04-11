@@ -7,8 +7,8 @@ const Contacto = () => {
   return (
     <div className='ContenedorContacto'>
       <div className='ConteTexFot'>
-        <div className='TextoContacto'>
-          <p>Soy tatuadora profesional, experta en el estilo Neotradicional Ornamental,
+        <div className='contenedorTextoContacto'>
+          <p className='TextoContacto'>Soy tatuadora profesional, experta en el estilo Neotradicional Ornamental,
             donde fusiono lo mejor de lo clásico y moderno. <br></br>
             <br></br>
             Mi enfoque es crear tatuajes personalizados que se adapten a tu propia historia.<br></br>
