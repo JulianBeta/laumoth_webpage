@@ -3,9 +3,9 @@ import FotoContactos from './../assets/fotomia.png'
 import './../styles/SeccionSegunda.css'
 
 
-const Contacto = () => {
+const Biografia = () => {
   return (
-    <div className='ContenedorContacto' id='contacto'>
+    <div className='ContenedorContacto' >
       <div className='ConteTexFot'>
         <div className='contenedorTextoContacto'>
           <p className='TextoContacto'>Soy tatuadora profesional, experta en el estilo Neotradicional Ornamental,
@@ -28,4 +28,4 @@ const Contacto = () => {
   )
 }
 
-export default Contacto;
+export default Biografia;
