@@ -2,12 +2,12 @@ import React from 'react';
 import './../styles/SeccionQuinta.css';
 import WhatsApp from './../assets/Whatsapp.png';
 import instagram from './../assets/Instagram.png';
-import cover1a from './../assets/cover1a.jpg';
-import cover1b from './../assets/cover1b.jpg';
-import piercing1 from './../assets/piercing1.jpg';
-import piercing2 from './../assets/piercing2.jpg';
-import tattoo2 from './../assets/tattoo2.jpg';
-import tattoo1 from './../assets/tattoo1.jpg';
+import cover1a from './../assets/cover1a.JPG';
+import cover1b from './../assets/cover1b.JPG';
+import piercing1 from './../assets/piercing1.JPG';
+import piercing2 from './../assets/piercing2.JPG';
+import tattoo2 from './../assets/tattoo2.JPG';
+import tattoo1 from './../assets/tattoo1.JPG';
 
 
 export default function Servicios() { 
