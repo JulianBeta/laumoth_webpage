@@ -23,10 +23,9 @@ export default defineConfig({
     open: true, // Automatically open browser
   },
   resolve: {
-    alias: [
-      { find: /^~/, replacement: '' }, // Handle Webpack's ~ imports
-      { find: 'src', replacement: '/src' }, // Absolute imports
-    ],
+    alias: {
+      '@assets': 'src/assets',
+  },
   },
   optimizeDeps: {
     include: ['react', 'react-dom'], // Pre-bundle deps
