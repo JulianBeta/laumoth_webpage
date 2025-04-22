@@ -8,7 +8,7 @@ import './../styles/SeccionPrimera.css'
 
 const BannerIncio = () => {
    return (
-    <div className='ContenedorBanner'>
+    <div className='ContenedorBanner' id='inicio'>
     <a></a>
       <img src={bannerimag1} />
       <img src={bannerimag2} />

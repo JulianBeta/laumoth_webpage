@@ -5,7 +5,7 @@ import './../styles/SeccionSegunda.css'
 
 const Contacto = () => {
   return (
-    <div className='ContenedorContacto'>
+    <div className='ContenedorContacto' id='contacto'>
       <div className='ConteTexFot'>
         <div className='contenedorTextoContacto'>
           <p className='TextoContacto'>Soy tatuadora profesional, experta en el estilo Neotradicional Ornamental,

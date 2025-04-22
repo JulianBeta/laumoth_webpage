@@ -13,13 +13,13 @@ function App() {
   return (
     <div className="App" style={{ background: `url(${logofondo})`, backgroundRepeat: 'repeat', backgroundAttachment: 'local', backgroundSize: '100%' }}   >
       <Header />
-      <BannerIncio />
+      <BannerIncio id="inicio"/>
 
-        <Contacto />
-        <Servicios />
-        <Tienda /> 
+        <Contacto id="contacto"/>
+        <Servicios id="servicios"/>
+        <Tienda id="tienda"/> 
            
-       <Galeria/>
+       <Galeria id="galeria"/>
         {/* <Servicios/> */}
         <Footer/>
 

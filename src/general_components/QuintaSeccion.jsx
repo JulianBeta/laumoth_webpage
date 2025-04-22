@@ -12,7 +12,7 @@ import tattoo1 from './../assets/tattoo1.jpg';
 
 export default function Servicios() { 
   return (
-    <div className='ContenedorServicios'>
+    <div className='ContenedorServicios' id='servicios'>
       <h2 className='TituloServicios'>SERVICIOS</h2>
        <hr className="dividercel" />
        
@@ -75,7 +75,7 @@ export default function Servicios() {
         </div>
       </div>
 
-      <h2 className='Titulocontacto'>CONTACTO</h2>
+      <h2 className='Titulocontacto' >CONTACTO</h2>
       <div className='BotonesContacto'>
         <a className='botonRedes' target='_blank' rel='noreferrer' href='https://www.instagram.com/laura.moth'>
           <button><img className='imgWA' src={instagram} alt="Instagram" />

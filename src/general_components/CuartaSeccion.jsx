@@ -7,7 +7,7 @@ import './../styles/SeccionCuarta.css'
 
 const Tienda = () => {
   return (
-    <div className='ContenedorTienda'>
+    <div className='ContenedorTienda' id='tienda'>
       <div ><b><h2 className='TituloTienda'>TIENDA</h2></b></div>
       <div className='GaleriaTienda' >
         <div className='contenedorproductos'><img className='ImagenesTienda' src={Parche} alt='fotoparche'/><p>PRINT<br></br>COP $60.000</p></div>

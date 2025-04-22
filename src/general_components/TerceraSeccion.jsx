@@ -14,7 +14,7 @@ import imagen4 from './../assets/galeriaescri4.png'
 
 const Galeria = () => {
   return (
-    <div className="container">
+    <div className="container" id='galeria'>
       <h1 className="heading"></h1>
       <Swiper
         effect={'coverflow'}

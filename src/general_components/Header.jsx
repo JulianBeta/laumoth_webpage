@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './../styles/Header.css'
 import logo from './../assets/logo.png'
+import ScrollLink from '../components/ScrollLink.jsx';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,14 +23,11 @@ const Header = () => {
             <div className="logo"><a href="#home"><img src={logo} alt="Logo" /></a></div>
            
             <ul className='vinculos'>
-
-              <li><a href="#link1">INICIO</a></li>
-              <li><a href="#link2">SERVICIOS</a></li>
-              <li><a href="#link3">CONTACTO</a></li>
-              <li><a href="#link4">TIENDA</a></li>
-              <li><a href="#link5">GALERIA</a></li>
-              
-
+              <li><ScrollLink to="inicio" onClick={closeMenu}>INICIO</ScrollLink></li>
+              <li><ScrollLink to="servicios" onClick={closeMenu}>SERVICIOS</ScrollLink></li>
+              <li><ScrollLink to="contacto" onClick={closeMenu}>CONTACTO</ScrollLink></li>
+              <li><ScrollLink to="tienda" onClick={closeMenu}>TIENDA</ScrollLink></li>
+              <li><ScrollLink to="galeria" onClick={closeMenu}>GALERIA</ScrollLink></li>
             </ul>
           </nav>
         </div>
@@ -48,11 +46,11 @@ const Header = () => {
             </div>
             <nav>
               <ul>
-                <li><a href="#link1" onClick={closeMenu}>INICIO</a></li>
-                <li><a href="#link2" onClick={closeMenu}>SERVICIOS</a></li>
-                <li><a href="#link3" onClick={closeMenu}>CONTACTO</a></li>
-                <li><a href="#link4" onClick={closeMenu}>TIENDA</a></li>
-                <li><a href="#link5" onClick={closeMenu}>GALERIA</a></li>
+                <li><ScrollLink to="inicio" onClick={closeMenu}>INICIO</ScrollLink></li>
+                <li><ScrollLink to="servicios" onClick={closeMenu}>SERVICIOS</ScrollLink></li>
+                <li><ScrollLink to="contacto" onClick={closeMenu}>CONTACTO</ScrollLink></li>
+                <li><ScrollLink to="tienda" onClick={closeMenu}>TIENDA</ScrollLink></li>
+                <li><ScrollLink to="galeria" onClick={closeMenu}>GALERIA</ScrollLink></li>
               </ul>
             </nav>
           </div>
