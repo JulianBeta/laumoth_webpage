@@ -8,12 +8,22 @@
     margin-top: 5%;
 }
 
+p {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6px;
+    font-style: normal;
+}
+
 .TituloTienda {
-    
     font-family: "Abril Fatface";
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin-bottom: 10px;
+    font-style: normal;
+    line-height: normal;
     
 }
 
