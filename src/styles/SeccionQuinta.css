@@ -152,16 +152,20 @@ p {
 
     .TituloServicios {
         font-family: "Abril Fatface";
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: 400;
         margin-bottom: 10px;
+        font-style: normal;
+        line-height: normal;
     }
 
     .Titulocontacto{
         font-family: "Abril Fatface";
-        font-size: 1.1rem;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: 400;
         margin-bottom: 10px;
+        font-style: normal;
+        line-height: normal;
     }
     
     .GaleriaServicios {
@@ -233,11 +237,11 @@ p {
 
 
     .recuadroservicios {
-    position: relative;
-    width: 70%;
-    height: auto;
-    justify-content: space-between; /* Ensure equal spacing between images */
-    overflow: hidden; 
+        position: relative;
+        width: 70%;
+        height: auto;
+        justify-content: space-between; /* Ensure equal spacing between images */
+        overflow: hidden; 
     }
     
     .cover-image {
@@ -259,6 +263,11 @@ p {
         border: 0;
         height: 1px;
         background-color: #000;
+    }
+
+    .imgWA, .imgIM {
+        width: 31px;
+        height: 31px;
     }
 }
 

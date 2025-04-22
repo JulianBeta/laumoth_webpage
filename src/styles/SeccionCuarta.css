@@ -49,6 +49,9 @@ p {
     align-items: center;
     width: 50%;
     position: relative;
+    padding-bottom: 25px;
+    border-bottom: solid;
+    border-color: #5c5c5c;
 }
 
 .CuadroFijo {
@@ -106,11 +109,13 @@ p {
     .TituloTienda {
     
         font-family: "Abril Fatface";
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: 400;
         margin-bottom: 10px;
+        font-style: normal;
+        line-height: normal;
     
-}
+    }
 
     .GaleriaTienda {
         width: 100%;        
@@ -138,6 +143,10 @@ p {
 
     .textocuadrocentralfijo {
         font-size: 9px;
+    }
+
+    p {
+        font-size: small;
     }
 
 }

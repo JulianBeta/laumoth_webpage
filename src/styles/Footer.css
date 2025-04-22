@@ -12,6 +12,8 @@
     text-align: center;
     justify-self: center;
     gap: 3rem;
+    letter-spacing: 7.5px;
+    line-height: normal;
 }
 
 .segundorenglon{
@@ -36,10 +38,11 @@
         text-align: center;
         justify-self: center;
         gap: 1rem;
+        font-size: 20px;
     }
     
     .segundorenglon{
-        font-size: .5rem;
+        font-size: 20px;
         text-align: center;
         justify-self: center;
         margin-bottom: 5px;
