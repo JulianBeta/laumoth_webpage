@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-appearance: none; /* Chrome/Safari */
+    -moz-appearance: none; /* Firefox */
+    appearance: none;
   }
   
   html, body {
