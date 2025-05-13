@@ -10,8 +10,8 @@ const Tienda = () => {
     <div className='ContenedorTienda' id='tienda'>
       <div ><b><h2 className='TituloTienda'>TIENDA</h2></b></div>
       <div className='GaleriaTienda' >
-        <div className='contenedorproductos'><img className='ImagenesTienda' src={Parche} alt='fotoparche'/><p>PRINT<br></br>COP $60.000</p></div>
-        <div className='contenedorproductos'><img className='ImagenesTienda' src={Printmoth} alt='Printmoth'/><p>PARCHE<br></br>COP $15.000</p></div>
+        <div className='contenedorproductos'><img className='ImagenesTienda' src={Parche} alt='fotoparche'/><p>PARCHE<br></br>COP $15.000</p></div>
+        <div className='contenedorproductos'><img className='ImagenesTienda' src={Printmoth} alt='Printmoth'/><p>PRINT<br></br>COP $60.000</p></div>
         <div className='contenedorproductos'><img className='ImagenesTienda' src={Stickers} alt='Stickers'/><p>SET de 3 STICKERS<br></br>COP $10.000</p></div>
       </div>
       <div className='BotonTienda'>
