@@ -60,9 +60,12 @@ p {
     margin: 0 auto;
     text-align: center;
     width: 35%;
-    height: 7em;
+    min-width: 280px; /* Add minimum width */
+    height: auto; /* Change from fixed height */
+    padding: 15px; /* Add padding */
     background-color: #5c5c5c;
     border-top-left-radius: 16px;
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 .botonInstagram {
@@ -84,19 +87,24 @@ p {
     font-size: 24px;
     font-weight: 400;
     z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 
 .textocuadrocentralfijo {
-    position: absolute;
-    top: 20%;
-    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 10px;
     color: #fff;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: clamp(10px, 2vw, 12px); /* Responsive font size */
     letter-spacing: 6px;
+    white-space: normal; /* Ensure text wraps */
+    word-break: break-word; /* Force word breaks */
 }
 
 
@@ -138,11 +146,15 @@ p {
     }
 
     .CuadroFijo {
-        width: 45%;
+        width: 90% !important; /* Full width on mobile */
+        min-width: unset;
+        border-top-left-radius: 16px; 
+        border-bottom-right-radius: 16px;
     }
 
     .textocuadrocentralfijo {
-        font-size: 9px;
+        font-size: clamp(10px, 3.5vw, 12px); /* Better mobile sizing */
+        letter-spacing: 3px; /* Reduce spacing on mobile */
     }
 
     p {
