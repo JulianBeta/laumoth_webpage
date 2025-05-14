@@ -17,28 +17,25 @@ export default function Servicios() {
        <div className='GaleriaServicios'>
         {/* First Service */}
        <div className='servicio'>
-       <b><h3>Cubrimientos</h3></b>
-          <p>Cuando ese tatuaje que tienes ya no te representa o quieres darle nueva vida, creamos una nueva composición que cubra muy bien el antiguo tatuaje.</p>
-          <hr className="divider" />
-          <div className='image-container'>
-            <img 
+        <div className='image-container'>
+          <img 
               className='recuadroservicios' 
               src={cover1b} 
-              alt="Cubrimientos" 
-            />
-            <img 
+              alt="Cubrimientos"/>
+             <img 
               className='recuadroservicios cover-image' 
               src={cover1a} 
-              alt="Cubrimientos Hover" 
-            />
-          </div>
+              alt="Cubrimientos Hover"/> 
+            </div>
+            <br></br>
+            <b><h3>Cubrimientos</h3></b> <hr className="divider" />
+            <p className='textoservicio'> Cuando ese tatuaje que tienes ya no te representa o quieres darle nueva vida, creamos una nueva composición que cubra muy bien el antiguo tatuaje.</p>
+         
+         
         </div>
 
         {/* Second Service */}
         <div className='servicio'>
-          <b><h3>Tatuajes</h3></b>
-          <p>Tatuajes personalizados donde mezclamos tu visión y mi estilo artístico para co-crear una pieza única y de calidad.</p>
-          <hr className="divider" />
           <div className='image-container'>
             <img 
               className='recuadroservicios' 
@@ -51,14 +48,16 @@ export default function Servicios() {
               alt="Tatuajes Hover" 
             />
           </div>
+          <br></br>
+          <b><h3>Tatuajes</h3></b>  <hr className="divider" />
+          <p className='textoservicio'> Tatuajes personalizados donde mezclamos tu visión y mi estilo artístico para co-crear una pieza única y de calidad.</p>
+        
+          
         </div>
 
         {/* Third Service */}
         <div className='servicio'>
-          <b><h3>Piercing</h3></b>
-          <p>Joyería de alta calidad y procesos precisos y altamente especializados para decorar tu cuerpo con perforaciones únicas y acordes a tu anatomía.</p>
-          <hr className="divider" />
-          <div className='image-container'>
+         <div className='image-container'>
             <img 
               className='recuadroservicios' 
               src={piercing1} 
@@ -69,7 +68,12 @@ export default function Servicios() {
               src={piercing2} 
               alt="Piercing Hover" 
             />
-          </div>
+          </div><br></br> 
+          <b><h3>Piercing</h3></b>
+          <hr className="divider" />
+        <p className='textoservicio'>  Joyería de alta calidad y procesos precisos y altamente especializados para decorar tu cuerpo con perforaciones únicas y acordes a tu anatomía.
+        </p>
+          
         </div>
       </div>
     </div>

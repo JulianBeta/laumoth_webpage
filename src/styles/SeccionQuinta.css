@@ -74,19 +74,20 @@ p {
     font-size: 20px;
     font-weight: 200;
     line-height: normal;
-    text-align: center;
-    max-width: 500px;
+    text-align: left;
+    max-width: 90%;
     height: 100px;
     font-style: normal;
 }
 
 /* Divider between image and text */
 .divider {
-    width: 80%;
+    width: 100%;
     margin: 20px auto; /* Ensures the divider is horizontally centered */
     border: 0;
     height: 1px;
     background-color: #000;
+    
 }
 
 .dividercel {
@@ -197,17 +198,21 @@ p {
         order: 1;
         width: 80%;
     }
+    
+    .textoservicio {
+        text-align: left;
+    }
 
-    p {
-        order: 0;
+    .textoservicio {
+        /* order: 0;
         max-width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 20px; */
         font-family: "Alumni Sans";
-        font-size: 15px;
-        font-weight: 200;
-        line-height: 1.6;
-        text-align: center;
-        height: 100px;
+        /* font-size: medium; */
+        /* font-weight: 200; */
+        /* line-height: 1.6; */
+        text-align:left;
+        height: auto;
     }
 
     .BotonesContacto {
