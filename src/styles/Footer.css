@@ -28,11 +28,9 @@
         font-family: "Alumni Sans";
         color: #5C5C5C;
         font-size: .5rem;
-      
     }
 
     .primerrenglon{
-        
         display: flex;
         flex-direction: row;
         text-align: center;
@@ -46,9 +44,11 @@
         text-align: center;
         justify-self: center;
         margin-bottom: 5px;
+        padding-bottom: 3%;
     }
 
     .seccionprimerrenglon {
         font-size: .5rem;
+        padding: 2%;
     }
 }
